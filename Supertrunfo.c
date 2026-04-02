@@ -14,7 +14,7 @@ int main (){
     int pontos; 
 
     printf("Digite a inicial do estado:\n"); //Especifiquei que é apenas a inicial, para facilitar o cadastro
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
     printf("Estado: %c\n", estado);
 
     printf("Digite o código da carta (Inicial + número):\n"); //Especifiquei que é a inicial + o número pra ficar compreensível.
@@ -31,11 +31,11 @@ int main (){
 
     printf("Digite a área em Km² (Apenas números):\n");
     scanf("%f", &area);
-    printf("Área: %.0f\n", area);
+    printf("Área: %.0f km²\n", area);
 
     printf("Digite o PIB da cidade (Apenas números):\n");
     scanf("%f", &PIB);
-    printf("PIB - Produto Interno Bruto: %.0f\n", PIB);
+    printf("PIB - Produto Interno Bruto: %.2f bilhões de reais\n", PIB);
     
     printf("Digite o número de pontos turísticos (Apenas números):\n");
     scanf("%d", &pontos);
@@ -45,8 +45,8 @@ int main (){
     printf("Código da Carta: %s\n", codigo);
     printf("Cidade: %s\n", cidade);
     printf("População da cidade: %d\n", populacao);
-    printf("Área: %.0f\n", area);
-    printf("PIB: %.0f\n", PIB);
+    printf("Área: %.0f km²\n", area);
+    printf("PIB: %.2f bilhões de reais\n", PIB);
     printf("Pontos turísticos: %d\n", pontos);
 
     return 0;
